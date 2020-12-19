@@ -9,3 +9,19 @@ set shiftwidth=2
 set number
 " enable highlighting
 syntax on
+" show the filename in the window titlebar
+set title
+" show the current mode
+set showmode
+" highlight search results
+set hlsearch
+" disable newline at the end of file
+set binary
+set noeol
+" strip trailing whitespace
+function! StripWhitespace()
+	let save_cursor = getpos('.')
+	:%s/\s\+$//e
+	call setpos('.', save_cursor)
+endfun
+autocmd BufWritePre * :call StripWhitespace()
