@@ -1,3 +1,7 @@
+" enable solarized dark theme
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
 " enable filetype event, plugin loading, and indentation
 filetype plugin indent on
 " show existing tab with 2 spaces width
@@ -8,7 +12,7 @@ set shiftwidth=2
 " enable line numbering
 set number
 " enable highlighting
-syntax on
+syntax enable
 " show the filename in the window titlebar
 set title
 " show the current mode
