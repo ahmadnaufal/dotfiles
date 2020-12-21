@@ -13,8 +13,12 @@ set shiftwidth=2
 set number
 " enable highlighting
 syntax enable
+" highlight current line
+set cursorline
 " show the filename in the window titlebar
 set title
+" always show status line
+set laststatus=2
 " show the current mode
 set showmode
 " highlight search results
