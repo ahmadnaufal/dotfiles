@@ -26,6 +26,10 @@ set hlsearch
 " disable newline at the end of file
 set binary
 set noeol
+" move backup, swap & undo history in a centralized directory
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+set undodir=~/.vim/undo
 " strip trailing whitespace
 function! StripWhitespace()
 	let save_cursor = getpos('.')
