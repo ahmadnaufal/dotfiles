@@ -11,6 +11,8 @@ set softtabstop=2
 set shiftwidth=2
 " enable line numbering
 set number
+" set scrolloff to 3 lines before
+set scrolloff=3
 " enable highlighting
 syntax enable
 " highlight current line
